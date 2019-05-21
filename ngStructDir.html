@@ -1,0 +1,14 @@
+<ng-template #otherContent>
+    <p style="color:red">Template html is displaying</p>
+    <jobs></jobs>
+</ng-template>
+
+<div *ngIf="display; else otherContent">
+    <p>  Try and Toggle me!</p>
+    <!--<jobs></jobs>-->
+</div>
+<br/>
+<button type="button" class="btn btn-success"
+      (click)="changeData()"> Toggle</button>
+
+     <!-- <ng-content></ng-content>-->
